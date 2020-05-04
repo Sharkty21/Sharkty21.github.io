@@ -33,8 +33,9 @@ body {
 	line-height: 1;
 }
 
-ol, ul {
+ol, ul, li {
 	list-style: none;
+	list-style-type: none;
 }
 
 blockquote, q {
@@ -1977,6 +1978,12 @@ input, select, textarea {
 	input[type="url"],
 	select {
 		height: 2.75em;
+	}
+
+	input[type="search"] {
+		background-color: white;
+		color: black;
+		width: 25%;
 	}
 
 	textarea {

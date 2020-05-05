@@ -33,6 +33,14 @@ body {
 	line-height: 1;
 }
 
+.highlight {
+	color: #9bf1ff;
+}
+
+.no-highlight {
+	background: none;
+}
+
 ol, ul, li {
 	list-style: none;
 	list-style-type: none;

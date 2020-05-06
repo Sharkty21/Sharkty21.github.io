@@ -129,14 +129,13 @@
 					</header>
 					<p>Use the search bar below to find my skills and their relevant categories</p>
 					<div type="search">
-						<input type="search" list="skills" id="skill" name="skill">
-						<datalist id="skills">
-							<option value="C"></option>
-							<option value="Javascript"></option>
-							<option value="Python"></option>
-							<option value="Css"></option>
-							<option value="HTML"></option>
-						</datalist>
+							<select class="skills" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+							  <option>Skills</option>
+							  <option value="projects.html#Budgit">Volvo</option>
+							  <option value="saab">Saab</option>
+							  <option value="opel">Opel</option>
+							  <option value="audi">Audi</option>
+							</select>
 					</div>
 				</div>
 			</section>
@@ -147,7 +146,7 @@
 		<section id="contact">
 			<div class="inner">
 				<section>
-					<form method="post" action="#">
+					<form method="post" action="mailto:tylermsharkey@gmail.com">
 						<div class="fields">
 							<div class="field half">
 								<label for="name">Name</label>
@@ -163,7 +162,7 @@
 							</div>
 						</div>
 						<ul class="actions">
-							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="submit" value="Send Message" class="primary" onClick="Alert()"/></li>
 							<li><input type="reset" value="Clear" /></li>
 						</ul>
 					</form>
@@ -205,6 +204,12 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script>
+			function Alert() {
+				alert("Form submitted!");
+		}
+		</script>
+
 
 </body>
 

@@ -149,7 +149,7 @@
 		<section id="contact">
 				<div class="inner">
 					<section>
-						<form method="post" action="#">
+						<form method="post" action="mailto:tylermsharkey@gmail.com">
 							<div class="fields">
 								<div class="field half">
 									<label for="name">Name</label>
@@ -165,7 +165,7 @@
 								</div>
 							</div>
 							<ul class="actions">
-								<li><input type="submit" value="Send Message" class="primary" /></li>
+								<li><input type="submit" value="Send Message" class="primary" onClick="Alert()"/></li>
 								<li><input type="reset" value="Clear" /></li>
 							</ul>
 						</form>
@@ -183,7 +183,8 @@
 								<span><a class="icon brands alt fa-github" href="https://github.com/Sharkty21"></a></span>
 								<h3><a href="https://github.com/Sharkty21">Github</a></h3>
 								<br>
-								<span><a class="icon brands alt fa-linkedin-in" href="https://www.linkedin.com/in/tylermsharkey"></a></span>
+								<span><a class="icon brands alt fa-linkedin-in"
+										href="https://www.linkedin.com/in/tylermsharkey"></a></span>
 								<h3><a href="https://www.linkedin.com/in/tylermsharkey">Linkedin</a></h3>
 							</div>
 						</section>
@@ -227,6 +228,11 @@
 			}
 		}
 	</script>
+	<script>
+			function Alert() {
+				alert("Form submitted!");
+		}
+		</script>
 
 </body>
 
